@@ -14,6 +14,7 @@
 7. [Top-Level Domain (TLD)](#top-level-domain-tld)
    - [`[a-z.]{2,6}`](#az26)
 8. [Conclusion](#conclusion)
+9. [About the Author](#about-the-author)
 
 ## Introduction
 Welcome to my regex tutorial! In this guide, we'll explore how to match valid email addresses using a regular expression (regex). We'll break down the regex into its components and explain each part.
@@ -24,6 +25,7 @@ The regex pattern we're examining is designed to match email addresses. It ensur
 Here's the regex pattern we'll be exploring:
 
 /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/
+
 
 This pattern might look complex at first, but we'll break it down step by step.
 
@@ -62,3 +64,7 @@ This part of the regex matches the top-level domain in the email address.
 
 ## Conclusion
 This regex is a powerful tool for ensuring that email addresses are formatted correctly. By understanding each component, you can see how it effectively validates the structure of an email.
+
+## About the Author
+This tutorial was created by Conor Lee, a web development student with a passion for coding and gaming. You can find more of my work and projects on [GitHub](https://github.com/ConorLee).
+
