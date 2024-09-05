@@ -1,12 +1,11 @@
 <header>
+  <h1>Conor Lee's Tech Blog</h1>
   <nav>
-    <a href="/">Home</a>
     {{#if logged_in}}
       <a href="/dashboard">Dashboard</a>
-      <a href="/logout">Logout</a>
+      <button id="logout">Logout</button>
     {{else}}
-      <a href="/login">Login</a>
-      <a href="/signup">Signup</a>
+      <a href="/login">Login</a> or <a href="/signup">Signup</a>
     {{/if}}
   </nav>
 </header>

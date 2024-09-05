@@ -1,8 +1,20 @@
+{{!-- views/homepage.handlebars --}}
+{{> header}}
+<h1>Welcome to Conor Lee's Tech Blog</h1>
+
+{{#if logged_in}}
+  <a href="/dashboard">Go to your dashboard</a>
+{{else}}
+  <a href="/login">Login</a> or
+  <a href="/signup">Sign up</a>
+{{/if}}
+
 {{#each posts}}
-  <article>
+  <div class="post">
     <h2>{{this.title}}</h2>
-    <p>By {{this.user.username}} on {{this.createdAt}}</p>
     <p>{{this.content}}</p>
-    <a href="/post/{{this.id}}">Read More</a>
-  </article>
+    <p>Posted by {{this.user.username}}</p>
+  </div>
 {{/each}}
+
+{{> footer}}
